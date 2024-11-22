@@ -9,7 +9,7 @@ public class InetAddressMain {
         InetAddress localhost = InetAddress.getByName("localhost");
         System.out.println(localhost);
 
-        InetAddress google = InetAddress.getByName("google.com");
+        InetAddress google = InetAddress.getByName("google.com");   // 분산 처리로 인해 IP 주소가 변경될 수 있다.
         System.out.println(google);
     }
 }
