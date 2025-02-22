@@ -48,7 +48,7 @@ public class AnnotationServletV3 implements HttpServlet {
         ControllerMethod controllerMethod = pathMap.get(path);
 
         if (controllerMethod == null) {
-            throw new PageNotFoundException("request=" + path);
+            throw new PageNotFoundException("request = " + path);
         }
 
         controllerMethod.invoke(request, response);

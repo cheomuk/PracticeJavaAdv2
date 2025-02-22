@@ -35,7 +35,7 @@ public class AnnotationServletV1 implements HttpServlet {
                 }
             }
         }
-        throw new PageNotFoundException("request=" + path);
+        throw new PageNotFoundException("request = " + path);
     }
 
     private static void invoke(Object controller, Method method, HttpRequest request, HttpResponse response) {
